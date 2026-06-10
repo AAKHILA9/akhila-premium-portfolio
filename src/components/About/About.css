@@ -1,3 +1,4 @@
+
 .about{
   padding:6rem 0;
 }
@@ -29,12 +30,14 @@
   width:100%;
   aspect-ratio:1/1;
   border-radius:2rem;
+
   background:linear-gradient(
     45deg,
     transparent,
     #4db4ff,
     transparent
   );
+
   display:grid;
   place-items:center;
 }
@@ -42,12 +45,13 @@
 .about-image img{
   width:100%;
   border-radius:2rem;
+
   transform:rotate(10deg);
   transition:.4s;
 }
 
 .about-image img:hover{
-  transform:rotate(0);
+  transform:rotate(0deg);
 }
 
 .about-content p{
@@ -58,13 +62,23 @@
 
 .about-btn{
   display:inline-block;
+
   background:#4db4ff;
   color:black;
+
   padding:1rem 2rem;
   border-radius:.6rem;
+
   font-weight:600;
   text-decoration:none;
+
   margin-top:1rem;
+
+  transition:.3s;
+}
+
+.about-btn:hover{
+  transform:translateY(-3px);
 }
 
 @media screen and (max-width:1024px){
@@ -75,18 +89,51 @@
   }
 
   .about-image{
-    width:60%;
+    width:50%;
     margin:auto;
-  }
-}
-
-@media screen and (max-width:600px){
-
-  .about-image{
-    width:80%;
   }
 
   .about-content{
     text-align:center;
   }
 }
+
+@media screen and (max-width:600px){
+
+  .about{
+    padding:4rem 1rem;
+  }
+
+  .about h2{
+    font-size:36px;
+  }
+
+  .about-container{
+    width:95%;
+    gap:1.5rem;
+  }
+
+  .about-image{
+    width:75%;
+    margin:auto;
+  }
+
+  .about-image img{
+    transform:none;
+  }
+
+  .about-content{
+    text-align:center;
+  }
+
+  .about-content p{
+    font-size:15px;
+    line-height:1.7;
+  }
+
+  .about-btn{
+    padding:.8rem 1.5rem;
+    font-size:14px;
+  }
+}
+
