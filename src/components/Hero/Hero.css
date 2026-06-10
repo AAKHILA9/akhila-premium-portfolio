@@ -1,3 +1,4 @@
+```css
 .hero{
   min-height:100vh;
   display:flex;
@@ -5,6 +6,7 @@
   align-items:center;
   position:relative;
   text-align:center;
+  padding:0 20px;
 }
 
 .hero-content h4{
@@ -17,6 +19,7 @@
   font-size:72px;
   font-weight:700;
   color:white;
+  line-height:1.1;
 }
 
 .hero-content h3{
@@ -30,9 +33,9 @@
 }
 
 .hero-buttons{
-  margin-top:50px;
+  margin-top:40px;
   display:flex;
-  gap:25px;
+  gap:20px;
   justify-content:center;
 }
 
@@ -43,7 +46,7 @@
   border-radius:8px;
   background:#55b8ff;
   color:black;
-  font-size:26px;
+  font-size:24px;
   cursor:pointer;
   font-weight:600;
   transition:.3s;
@@ -73,7 +76,6 @@
 
 .social-bar a:hover{
   color:#55b8ff;
-  transform:translateY(-3px);
 }
 
 .social-bar::after{
@@ -81,8 +83,6 @@
   width:2px;
   height:100px;
   background:white;
-  margin-top:10px;
-  opacity:.8;
 }
 
 .scroll-down{
@@ -92,9 +92,48 @@
   transform:translateY(-50%);
 
   writing-mode:vertical-rl;
-  text-orientation:mixed;
-
   color:white;
-  font-size:15px;
-  letter-spacing:2px;
+  font-size:14px;
+}
+
+/* MOBILE */
+
+@media screen and (max-width:600px){
+
+  .hero{
+    padding:100px 15px 40px;
+  }
+
+  .hero-content h4{
+    font-size:16px;
+  }
+
+  .hero-content h1{
+    font-size:42px;
+  }
+
+  .hero-content h3{
+    font-size:22px;
+    margin-top:10px;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+  }
+
+  .hero-buttons button{
+    width:220px;
+    height:55px;
+    font-size:18px;
+  }
+
+  .social-bar{
+    display:none;
+  }
+
+  .scroll-down{
+    display:none;
+  }
 }
