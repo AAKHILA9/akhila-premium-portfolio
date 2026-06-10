@@ -1,3 +1,6 @@
+git add .
+git commit -m "Projects mobile responsive"
+git push
 .projects{
   padding:6rem 0;
 }
@@ -57,14 +60,12 @@
 .project-content h3{
   color:white;
   margin-bottom:15px;
-  transition:.3s;
 }
 
 .project-content p{
   color:#ccc;
   line-height:1.8;
   margin-bottom:20px;
-  transition:.3s;
 }
 
 .project-card:hover h3{
@@ -102,13 +103,71 @@
   transform:translateY(-3px);
 }
 
+/* TABLET */
+
 @media(max-width:1024px){
 
   .projects-container{
+    width:90%;
     grid-template-columns:1fr;
   }
 
   .project-card img{
     height:220px;
   }
+
 }
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+  .projects{
+    padding:4rem 1rem;
+  }
+
+  .projects h2{
+    font-size:34px;
+    margin-bottom:2rem;
+  }
+
+  .projects-container{
+    width:100%;
+    gap:1.5rem;
+  }
+
+  .project-card{
+    border-radius:15px;
+  }
+
+  .project-card img{
+    height:180px;
+  }
+
+  .project-content{
+    padding:18px;
+  }
+
+  .project-content h3{
+    font-size:18px;
+  }
+
+  .project-content p{
+    font-size:14px;
+    line-height:1.6;
+  }
+
+  .tech-stack{
+    font-size:14px;
+    margin-bottom:18px;
+  }
+
+  .project-btn{
+    width:100%;
+    text-align:center;
+    padding:12px;
+    font-size:14px;
+  }
+
+}
+
