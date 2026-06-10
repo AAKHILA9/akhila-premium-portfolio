@@ -172,4 +172,22 @@
     letter-spacing:1px;
   }
 }
+@media(max-width:600px){
 
+  .social-bar{
+    display:none;
+  }
+
+  .scroll-down{
+    display:none;
+  }
+
+  .hero-content h1{
+    font-size:40px;
+  }
+
+  .hero-content h3{
+    font-size:22px;
+  }
+
+}
