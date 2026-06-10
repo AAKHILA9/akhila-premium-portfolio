@@ -33,9 +33,9 @@
 }
 
 .hero-buttons{
-  margin-top:40px;
+  margin-top:50px;
   display:flex;
-  gap:20px;
+  gap:25px;
   justify-content:center;
 }
 
@@ -46,7 +46,7 @@
   border-radius:8px;
   background:#55b8ff;
   color:black;
-  font-size:24px;
+  font-size:26px;
   cursor:pointer;
   font-weight:600;
   transition:.3s;
@@ -76,6 +76,7 @@
 
 .social-bar a:hover{
   color:#55b8ff;
+  transform:translateY(-3px);
 }
 
 .social-bar::after{
@@ -83,6 +84,8 @@
   width:2px;
   height:100px;
   background:white;
+  margin-top:10px;
+  opacity:.8;
 }
 
 .scroll-down{
@@ -92,8 +95,25 @@
   transform:translateY(-50%);
 
   writing-mode:vertical-rl;
+  text-orientation:mixed;
+
   color:white;
-  font-size:14px;
+  font-size:15px;
+  letter-spacing:2px;
+}
+
+/* TABLET */
+
+@media screen and (max-width:1024px){
+
+  .hero-content h1{
+    font-size:58px;
+  }
+
+  .hero-content h3{
+    font-size:30px;
+  }
+
 }
 
 /* MOBILE */
@@ -110,6 +130,7 @@
 
   .hero-content h1{
     font-size:42px;
+    line-height:1.1;
   }
 
   .hero-content h3{
@@ -121,6 +142,7 @@
     flex-direction:column;
     align-items:center;
     gap:12px;
+    margin-top:30px;
   }
 
   .hero-buttons button{
@@ -130,10 +152,24 @@
   }
 
   .social-bar{
-    display:none;
+    left:10px;
+    top:50%;
+    gap:10px;
+  }
+
+  .social-bar a{
+    font-size:18px;
+  }
+
+  .social-bar::after{
+    height:50px;
   }
 
   .scroll-down{
-    display:none;
+    display:block;
+    right:10px;
+    font-size:10px;
+    letter-spacing:1px;
   }
 }
+
