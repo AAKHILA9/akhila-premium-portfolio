@@ -45,7 +45,7 @@ function Hero() {
               words={[
                 "Junior Software Engineer",
                 "AI & ML Enthusiast",
-                "Aspiring Frontend Developer",
+                "Aspiring Full-Stack Developer",
                 "Content Creator @Campusbuzz9"
               ]}
               loop={0}
