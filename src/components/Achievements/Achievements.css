@@ -1,3 +1,4 @@
+
 .achievements{
   padding:6rem 0;
 }
@@ -78,10 +79,55 @@
   background:white;
 }
 
+/* TABLET */
+
 @media(max-width:1024px){
 
   .achievements-container{
+    width:90%;
     grid-template-columns:1fr;
   }
 
 }
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+  .achievements{
+    padding:4rem 1rem;
+  }
+
+  .achievements h2{
+    font-size:34px;
+    margin-bottom:2rem;
+  }
+
+  .achievements-container{
+    width:100%;
+    gap:1.5rem;
+  }
+
+  .achievement-card img{
+    height:180px;
+  }
+
+  .achievement-card h3{
+    font-size:18px;
+    margin:15px 10px 10px;
+  }
+
+  .achievement-card p{
+    font-size:14px;
+    min-height:auto;
+    margin:0 15px 15px;
+  }
+
+  .achievement-btn{
+    width:85%;
+    text-align:center;
+    margin-bottom:20px;
+  }
+
+}
+
