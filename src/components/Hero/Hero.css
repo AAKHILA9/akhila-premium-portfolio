@@ -1,0 +1,100 @@
+.hero{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  text-align:center;
+}
+
+.hero-content h4{
+  font-size:24px;
+  margin-bottom:10px;
+  color:#ffffff;
+}
+
+.hero-content h1{
+  font-size:72px;
+  font-weight:700;
+  color:white;
+}
+
+.hero-content h3{
+  margin-top:20px;
+  font-size:38px;
+  color:white;
+}
+
+.hero-content span{
+  color:#4db4ff;
+}
+
+.hero-buttons{
+  margin-top:50px;
+  display:flex;
+  gap:25px;
+  justify-content:center;
+}
+
+.hero-buttons button{
+  width:220px;
+  height:70px;
+  border:none;
+  border-radius:8px;
+  background:#55b8ff;
+  color:black;
+  font-size:26px;
+  cursor:pointer;
+  font-weight:600;
+  transition:.3s;
+}
+
+.hero-buttons button:hover{
+  transform:translateY(-5px);
+}
+
+.social-bar{
+  position:absolute;
+  left:60px;
+  top:50%;
+  transform:translateY(-50%);
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+}
+
+.social-bar a{
+  color:white;
+  font-size:24px;
+  transition:.3s;
+}
+
+.social-bar a:hover{
+  color:#55b8ff;
+  transform:translateY(-3px);
+}
+
+.social-bar::after{
+  content:"";
+  width:2px;
+  height:100px;
+  background:white;
+  margin-top:10px;
+  opacity:.8;
+}
+
+.scroll-down{
+  position:absolute;
+  right:60px;
+  top:50%;
+  transform:translateY(-50%);
+
+  writing-mode:vertical-rl;
+  text-orientation:mixed;
+
+  color:white;
+  font-size:15px;
+  letter-spacing:2px;
+}

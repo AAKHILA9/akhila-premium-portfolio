@@ -1,0 +1,149 @@
+#contact{
+  padding:6rem 0;
+}
+
+#contact h5{
+  text-align:center;
+  color:#888;
+}
+
+.contact-text{
+  text-align:center;
+  color:#ccc;
+  margin-top:10px;
+}
+
+#contact h2{
+  text-align:center;
+  color:#4db4ff;
+  font-size:48px;
+  margin-bottom:4rem;
+}
+
+.contact-container{
+  width:80%;
+  margin:auto;
+
+  display:grid;
+  grid-template-columns:22% 68%;
+  gap:10%;
+}
+
+.contact-options{
+  display:flex;
+  flex-direction:column;
+  gap:1rem;
+}
+
+.contact-option{
+  background:#112240;
+  padding:1rem;
+  border-radius:1.2rem;
+  text-align:center;
+
+  border:1px solid transparent;
+  transition:.3s;
+}
+
+.contact-option:hover{
+  transform:translateY(-6px);
+  border-color:#4db4ff;
+  box-shadow:0 10px 25px rgba(77,180,255,.2);
+}
+
+.contact-icon{
+  font-size:1.5rem;
+  color:#4db4ff;
+  margin-bottom:.8rem;
+}
+
+.contact-option h4{
+  color:white;
+  font-size:1.1rem;
+  margin-bottom:.5rem;
+}
+
+.contact-option h5{
+  color:#ccc;
+  font-size:.8rem;
+  margin-bottom:1rem;
+  word-break:break-word;
+}
+
+.contact-option a{
+  color:#4db4ff;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.contact-option a:hover{
+  color:white;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+  gap:1.5rem;
+}
+
+input,
+textarea{
+  width:100%;
+  padding:1rem;
+  border-radius:.8rem;
+  border:1px solid #4db4ff;
+  background:transparent;
+  color:white;
+  resize:none;
+}
+
+input:focus,
+textarea:focus{
+  outline:none;
+  border-color:white;
+}
+
+.btn-send{
+  width:max-content;
+
+  padding:1rem 2rem;
+
+  border:none;
+  border-radius:10px;
+
+  background:#4db4ff;
+  color:black;
+
+  font-weight:600;
+  cursor:pointer;
+
+  transition:.3s;
+}
+
+.btn-send:hover{
+  background:white;
+  transform:translateY(-3px);
+}
+
+.success-message{
+  color:#4db4ff;
+  font-weight:600;
+  margin-top:.5rem;
+}
+
+@media(max-width:1024px){
+
+  .contact-container{
+    grid-template-columns:1fr;
+    gap:2rem;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .contact-container{
+    width:90%;
+  }
+
+}
